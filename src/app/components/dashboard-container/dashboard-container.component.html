@@ -1,0 +1,29 @@
+<mat-sidenav-container class="dashboard-container">
+  <mat-sidenav mode="side" opened>
+    <div class="flex h-full items-center">
+      <nav
+        class="flex flex-col h-3/4 w-16 justify-center items-center gap-5 m-3 bg-green-400 rounded-3xl"
+      >
+        <a routerLink="/predictions">
+          <img
+            class="w-8"
+            src="../../../assets/icons/predictive-chart.png"
+            alt="Predictions"
+            srcset=""
+          />
+        </a>
+        <a routerLink="/results">
+          <img
+            class="w-8"
+            src="../../../assets/icons/results.png"
+            alt="Resultados"
+            srcset=""
+          />
+        </a>
+      </nav>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <ng-component></ng-component>
+  </mat-sidenav-content>
+</mat-sidenav-container>

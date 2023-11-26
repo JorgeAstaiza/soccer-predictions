@@ -1,0 +1,21 @@
+<div class="flex flex-col">
+  <div (scroll)="onSelectScroll($event)">
+    <mat-form-field class="rounded-lg">
+      <mat-label>Selecciona un país</mat-label>
+      <div (scroll)="onSelectScroll($event)">
+        <mat-select (openedChange)="onSelectOpen($event)">
+          @for (item of countrys; track $index) {
+          <div>
+            <mat-option value="{{ item.code }}">
+              <!-- <img src="{{ item.flag }}" alt="" srcset="" />-->
+              {{ item.name }}
+            </mat-option>
+          </div>
+          }
+        </mat-select>
+      </div>
+    </mat-form-field>
+  </div>
+  <div></div>
+</div>
+<div></div>
